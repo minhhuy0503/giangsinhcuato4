@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Thờ Đức Bà Sài Gòn - Giáng Sinh 2025</title>
+
+    <!-- Dùng font local của mày -->
+    <style>
+        @font-face {
+            font-family: 'SnowForSanta';
+            src: url('font/MTD-Snow-For-Santa.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            font-family:'Playfair Display',serif;
+            background:linear-gradient(135deg,#e0f6f6,#b2e8e8,#87d5d5);
+            color:#0a3d3d;
+            min-height:100vh;
+        }
+        .home-btn{
+            position:fixed;top:18px;left:18px;z-index:9999;
+            width:180px;height:80px;transition:.35s;
+        }
+        .home-btn img{width:100%;height:100%;object-fit:contain;}
+        .home-btn:hover{transform:scale(1.12) translateY(-4px);}
+
+        header{
+            text-align:center;
+            padding:130px 20px 80px;
+            background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+                       url('https://images.unsplash.com/photo-1578662996442-48f60103fcbf?w=1920') center/cover;
+            color:#fff;
+        }
+
+        h1,h2{
+            text-align:center;color:#c0392b;font-size:2.6rem;margin-bottom:30px;
+            font-family:'SnowForSanta',cursive;   /* ← Dùng luôn cho tiêu đề nhỏ nếu muốn */
+        }
+        .photos{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:20px;}
+        .photo{
+            width:340px;height:340px;object-fit:cover;border-radius:20px;
+            border:7px solid #fff;box-shadow:0 12px 35px rgba(0,0,0,.18);
+            transition:.3s;
+        }
+        .photo:hover{transform:translateY(-12px);}
+
+        table{
+            width:100%;border-collapse:collapse;margin-top:25px;
+            background:#fff;border-radius:15px;overflow:hidden;
+            box-shadow:0 8px 25px rgba(0,0,0,.1);font-size:1.2rem;
+        }
+        th{background:#c0392b;color:#fff;padding:18px;}
+        td{padding:16px;border-bottom:1px solid #eee;}
+        tr:hover{background:#fff5f5;}
+
+        iframe{
+            width:100%;height:520px;border:none;border-radius:20px;
+            box-shadow:0 15px 40px rgba(0,0,0,.15);
+        }
+        footer{text-align:center;padding:50px;color:#0a3d3d;font-size:0.95rem;}
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="home-btn">
+        <img src="https://cdn11.bigcommerce.com/s-cjnf1slqyn/stencil/64dabcf0-e57c-013d-7ac8-0eca57f054bb/e/75ca4f20-43ab-013e-1b20-0218211d7122/img/branding/christmas-logo.svg?2025-12-10T00:00:00+00:00" alt="Home">
+    </a>
+
+    <header>
+        <h1>Nhà Thờ Đức Bà</h1>
+        <div class="address">01 Công Xã Paris, Quận 1, TP.HCM</div>
+    </header>
+
+    <div class="section">
+        <h2>Hình ảnh Nhà thờ</h2>
+        <div class="photos">
+            <img src="ảnh-1.jpg" class="photo">
+            <img src="ảnh-2.jpg" class="photo">
+            <img src="ảnh-3.jpg" class="photo">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Lịch Thánh lễ Giáng Sinh 2025</h2>
+        <table>
+            <tr><th>Ngày</th><th>Giờ</th><th>Nội dung</th></tr>
+            <tr><td>24/12/2025</td><td>18:00</td><td>Thánh lễ Vọng</td></tr>
+            <tr><td>24/12/2025</td><td>22:00</td><td>Thánh lễ Đêm Giáng Sinh</td></tr>
+            <tr><td>25/12/2025</td><td>05:30 - 07:30 - 09:30</td><td>Các Thánh lễ ban ngày</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Vị trí trên Google Maps</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.449940010569!2d106.69660861477282!3d10.779790592312465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38c3a1b3b1%3A0x5d3c5e9b61f8b456!2zTmhhIFRo4buRIEPhu61jIELhBQ!5e0!3m2!1svi!2s!4v1733901234567" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer>
+        © Giáng Sinh 2025 - Nhà Thờ Đức Bà Sài Gòn<br>
+        Chúc quý cộng đoàn một mùa Giáng Sinh thật an lành và ấm áp!
+    </footer>
+
+</body>
+</html>
